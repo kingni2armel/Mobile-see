@@ -1,0 +1,224 @@
+import { colors } from "../../styles";
+import {StyleSheet } from 'react-native';
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor:colors.WHITE, 
+  },
+  TitleSingup:{
+    justifyContent:'center',
+    alignItems:'center'
+  },
+  TextSingup:{
+    color:colors.ORANGE,
+    fontSize:20,
+    marginTop:25
+  },
+  Input:{
+    backgroundColor:colors.WHITE,
+    borderColor:colors.PRIMARY,
+    borderWidth:1,
+    borderRadius:35,
+    height:50,
+    width:300,
+    marginTop:20,
+    paddingLeft:25,
+    marginLeft:20
+  },
+  textInput:{
+    marginLeft:-190,
+    marginTop:25  
+  },
+  containerParentCheckbox:{
+    flexDirection:'row',
+    marginLeft:20
+  },  
+  containerCheckbox:{
+      flexDirection:'row',
+      height:50,
+      width:140,
+      backgroundColor:colors.PRIMARY,
+      borderRadius:30,
+      margin:5
+  },
+  containerCheckbox2:{
+    flexDirection:'row',
+    height:50,
+    width:140,
+    borderWidth:1,
+    borderColor:colors.GRISE,
+    backgroundColor:colors.WHITE,
+    borderRadius:30,
+    margin:5
+},
+  label:{
+      marginTop:15,
+      marginLeft:-10,
+      color:colors.WHITE
+  },
+  label2:{
+    marginTop:15,
+    marginLeft:-10,
+    color:colors.GRISE
+},
+
+CheckBox:{
+  borderColor:colors.WHITE,
+  height:1,
+  width:1,
+  borderRadius:35
+},
+picker: {
+  marginVertical: 30,
+  width: 300,
+  height:50,
+  padding: 10,
+  borderRadius:35,
+  borderWidth:1,
+  borderColor:colors.PRIMARY,
+},
+Allcountry:{
+  backgroundColor:colors.WHITE,
+  borderColor:colors.PRIMARY,
+  borderWidth:1,
+  borderRadius:35,
+  height:50,
+  width:300,
+  marginTop:20,
+  paddingLeft:25,
+  marginLeft:20
+},
+countryPicker:{
+  borderWidth:5,
+  borderColor:colors.PRIMARY
+},
+labelNumber:{
+  borderWidth:1,
+  borderColor:colors.PRIMARY,
+  borderRadius:35,
+  padding:5
+},
+containerParentNumber:{
+  flexDirection:'row',
+  marginLeft:20,
+  marginTop:15
+}, 
+numberTextInput:{
+  backgroundColor:colors.WHITE,
+  borderColor:colors.PRIMARY,
+  borderWidth:1,
+  borderRadius:35,
+  height:50,
+  width:180,
+  paddingLeft:25,
+  marginLeft:20
+},
+TextConfidentialite:{
+  textAlign:'center',
+  marginTop:50,
+},
+btnConnect:{
+  backgroundColor:colors.SECONDARY,
+  borderColor:colors.SECONDARY,
+  height:50,
+  borderRadius:25,
+  width:300,
+  marginTop:20,
+  borderWidth:1,
+  justifyContent:'center',
+  alignItems:'center',
+},
+textConnect:{
+color:colors.PRIMARY,
+fontWeight:'bold'
+},
+containerText:{
+flexDirection:'row',
+marginTop:15,
+},
+TestSingup:{
+color:colors.ORANGE
+},
+
+slide1: {
+
+  flex:1,
+  backgroundColor:colors.WHITE,
+},
+slideTop:{
+  alignItems:'center',
+  position:'relative',
+},
+slide2: {
+  flex:1,
+  backgroundColor:colors.WHITE,
+},
+slide3: {
+  flex:1,
+  backgroundColor:colors.WHITE,
+},
+dotColor:{
+  color:colors.ORANGE
+},
+
+activeDotStyle:{
+  width:15
+},
+TextDescription:{
+      marginLeft:46,
+      color:colors.GRISE,
+      marginTop:50
+},
+
+textPasser:{
+  color:colors.PRIMARY,
+  fontWeight:'bold',
+  marginLeft:250,
+  marginTop:10
+},  
+
+btnNext2:{
+  backgroundColor:colors.PRIMARY,
+  borderColor:colors.PRIMARY,
+  height:50,
+  borderRadius:25,
+  width:300,
+  marginTop:20,
+  borderWidth:1,
+  justifyContent:'center',
+  alignItems:'center',
+},
+textBtnNext2:{
+  color:colors.WHITE
+},
+ContainerBtnNext2:{
+  marginTop:250
+},
+TextConfidentialite:{
+  textAlign:'center'
+},
+level1:{
+  backgroundColor:colors.PRIMARY,
+  height:6,
+  width:70,
+  borderRadius:25,
+  marginRight:183,
+  marginTop:3
+},
+level2:{
+  backgroundColor:colors.PRIMARY,
+  height:6,
+  width:140,
+  borderRadius:25,
+  marginRight:109,
+  marginTop:3
+},
+level3:{
+  backgroundColor:colors.PRIMARY,
+  height:6,
+  width:270,
+  borderRadius:25,
+  marginTop:3
+},
+});
+    
