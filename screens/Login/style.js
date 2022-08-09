@@ -4,14 +4,13 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding:20,
+    alignItems:"center",
     justifyContent:'center',
     backgroundColor:colors.WHITE, 
   },
   ContainerImage:{
     justifyContent:'center',
     alignItems:'center',
-    marginTop:-150,
-
   },
   login:{
     width: 195,

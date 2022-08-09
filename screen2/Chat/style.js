@@ -1,0 +1,227 @@
+import { colors,mixins } from "../../styles";
+
+import {StyleSheet } from 'react-native';
+export const styles = StyleSheet.create({
+  
+ContainerParent:{
+    backgroundColor:colors.GRISE3,
+    flex:1
+},
+slidecontainer: {
+    flex: 1,
+    justifyContent:"flex-end",
+    padding:20,
+    backgroundColor:colors.GRISE3,
+},
+
+Container:{
+    marginHorizontal:1,
+    height:50,
+    flexDirection:"row",
+    backgroundColor:colors.WHITE,
+    borderRadius:10,
+    ...mixins.boxShadow(colors.BLACK),
+    margin:5,
+},
+ContainerHeader:{
+    flexDirection:"row",
+    justifyContent:"space-between"
+},
+containerCity:{
+    flexDirection:"row",
+    justifyContent:"space-between",
+    marginTop:15
+},
+TextFirst:{
+    fontSize:15,
+    color:colors.GRISE2
+},
+date:{
+    fontSize:18
+},
+pays:{
+    color:colors.GRISE2,
+    fontSize:14
+},
+children:{
+    height:50,
+    flex:1,
+    backgroundColor:colors.GRISE2,
+    borderColor:colors.GRISE2
+},
+children2:{
+    height:50,
+    flex:1
+},
+Parent:{
+    marginTop:40
+},
+TextChildren1:{
+  textAlign:"center",
+  marginTop:15,
+  fontSize:12,
+  fontFamily:"Optima, Regular"
+},
+TextChildren2:{
+    textAlign:"center",
+    marginTop:15,
+    fontSize:13,
+    color:colors.BLACK,
+    fontFamily:"Optima, Regular"
+  },
+
+  Image2:{
+    height:15,
+    width:10,
+    marginTop:2
+  },
+  Parentchild:{
+    flexDirection:"row",
+    justifyContent:"flex-start",
+    marginTop:-5
+  },
+ 
+  Item:{
+    margin:5
+  },
+  ContainerIcon:{
+    justifyContent:"center",
+    flexDirection:"row",
+    marginHorizontal:1,
+    marginTop:25
+
+  },
+  ContainerIconItem2:{
+    flexDirection:"row",
+    marginTop:-12
+  },
+  IconItem:{
+    height:40,
+    width:40,
+    backgroundColor:colors.WHITE,
+    borderWidth:1,
+    borderColor:colors.WHITE,
+    borderRadius:80,
+    ...mixins.boxShadow(colors.BLACK),
+    margin:3
+  },
+  IoniconsIcon1:{
+        fontSize:27,
+        color:colors.VERT,
+        flex:1,
+        textAlign:"center",
+        marginTop:3
+
+  },
+  IoniconsIcon2:{
+    fontSize:27,
+    color:colors.PRIMARY,
+    flex:1,
+    textAlign:"center",
+    marginTop:3
+
+},
+IoniconsIcon3:{
+    fontSize:27,
+    color:colors.BLACK,
+    flex:1,
+    textAlign:"center",
+    marginTop:3
+},
+IoniconsIcon4:{
+    fontSize:27,
+    color:colors.TWITTER,
+    flex:1,
+    textAlign:"center",
+    marginTop:3
+},
+IconShop:{
+    marginTop:10,
+    marginLeft:-8
+},
+Iconecheckcircle:{
+    color:colors.PRIMARY,
+    marginTop:10,
+    marginLeft:20
+},
+Iconecheckcircle2:{
+    color:colors.BLACK,
+    marginTop:10,
+    marginLeft:10
+},
+UserInfo:{
+    height:100,
+    justifyContent:"space-around",
+    marginTop:15,
+    backgroundColor:colors.WHITE,
+    borderWidth:1,
+    borderColor:colors.WHITE,
+    borderRadius:15,
+    ...mixins.boxShadow(colors.BLACK),
+},
+WRAP:{
+    flexDirection:"row",
+    justifyContent:"space-between"
+},
+TextCommentaire:{
+    textAlign:"center",
+    color:colors.GRISE2,
+    marginTop:-15
+},
+Image:{
+    height:50,
+    width:60
+},
+containerInformation:{
+    flexDirection:"row",
+    justifyContent:"flex-start"
+},
+ContainerName:{
+    flexDirection:"row"
+},
+textCertifiee:{
+    color:colors.VERT,
+    fontSize:10,
+    marginTop:-5
+},
+ContainerIconAvis:{
+    flexDirection:"row",
+},
+IconAvis:{
+    color:colors.ORANGE,
+    fontSize:8
+},
+IconeMessage:{
+    color:colors.WHITE,
+    marginLeft:8
+},
+TextAvis:{
+    fontSize:10
+},
+TextNom:{
+    fontSize:12,
+    marginTop:10
+},
+UserInfoItemBorder:{
+    height:4,
+    backgroundColor:colors.GRISE2
+},
+ContainerButton:{
+    justifyContent:"center",
+    alignItems:"center",
+},
+Button:{
+    alignItems:"center",
+    justifyContent:"center",
+    flexDirection:"row",
+    marginTop:15,
+    backgroundColor:colors.PRIMARY,
+    height:50,
+    width:200,  
+    borderRadius:30
+},
+TextButton:{
+    color:colors.WHITE
+}
+
+});

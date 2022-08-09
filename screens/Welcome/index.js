@@ -57,6 +57,12 @@ function WelcomeScreen({navigation}) {
                             >
                                     <Text style={styles.textStart}>Start</Text>
                             </TouchableOpacity>
+                             <TouchableOpacity 
+                                onPress={()=>navigation.navigate('HomeStart')}
+                                style={styles.btnStart}
+                            >
+                                    <Text style={styles.textStart}>Tab navigation</Text>
+                            </TouchableOpacity>
                         </View>
                     </View>
                 </Swiper>   

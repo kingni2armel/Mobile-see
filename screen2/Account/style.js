@@ -1,0 +1,97 @@
+import { colors,mixins } from "../../styles";
+import {StyleSheet } from 'react-native';
+import { FontFamily } from "../../styles/mixins";
+export const styles = StyleSheet.create({
+    Container:{
+        flex:1,
+        backgroundColor:colors.WHITE
+        
+    },
+    ContainerItem:{
+        flex:1,
+        backgroundColor:colors.PRIMARY,
+        width:290,
+        borderTopRightRadius:42,
+        borderBottomEndRadius:42
+    },
+    DataItem:{
+        height:180,
+        backgroundColor:colors.GRISE5,
+        width:290,
+        borderTopRightRadius:42,
+    },
+    DataItemchild:{
+        padding:20
+    },
+    Image2:{
+            height:50,
+            width:50
+    },
+    textName:{
+        color:colors.WHITE,
+        fontWeight:"bold",
+        fontSize:20
+    },
+    ContainerIconAvis:{
+        flexDirection:"row",
+    },
+    IconAvis:{
+        color:colors.ORANGE,
+        fontSize:12,
+        margin:4
+    },
+    TextCerifie:{
+        color:colors.WHITE,
+        fontFamily:FontFamily,
+        fontSize:14
+    },
+    ParentContainerSecond:{
+        padding:20
+    },
+    ContainerSecond:{
+        flexDirection:"row",
+        justifyContent:"space-between"
+    },
+    ContainerSecond2:{
+        flexDirection:"row",
+        justifyContent:"space-between",
+        marginTop:-25
+    },
+    ContainerRadius:{
+        marginTop:-8
+    },
+    ImageLangue:{
+        height:30,
+        width:30
+    },
+    TextIndication:{
+        color:colors.WHITE,
+        fontFamily:FontFamily,
+        fontSize:14
+    },
+    Line:{
+        height:1,
+        backgroundColor:colors.GRISE,
+        marginTop:-10
+    },
+    COntainerDash:{
+        padding:10,
+    },
+    Dash:{
+        flexDirection:"row",
+        marginLeft:5,   
+        margin:5
+    },
+    IconDash:{
+        color:colors.GRISE4,
+
+    },
+    TextDash:{
+        color:colors.GRISE4,
+        FontFamily:FontFamily,
+        fontSize:14,
+        marginLeft:8,
+        marginTop:2
+    }
+
+});

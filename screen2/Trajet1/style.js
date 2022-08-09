@@ -1,0 +1,101 @@
+import { colors,mixins } from "../../styles";
+
+import {StyleSheet } from 'react-native';
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor:colors.WHITE,
+    padding:20
+  },
+  titleHeader:{
+    colors:colors.ORANGE,
+    textAlign:"center",
+    fontWeight:"bold",
+    fontSize:22,
+  },
+  TrajetTitle:{
+    fontSize:21,
+    color:colors.ORANGE,
+    fontWeight:"bold",
+    fontFamily:"regular",
+    marginTop:15
+  },
+  levelStepTitele:{
+        marginTop:5
+  },
+  LabelText:{
+        fontSize:13,
+        fontWeight:"bold",
+        color:colors.BLACK,
+        marginTop:3
+
+  },
+  Levelstep:{
+        height:20,
+  },
+  TextInputstyle:{
+        height:50,
+        paddingLeft:10,
+        borderColor:"none",
+        backgroundColor:colors.WHITE,
+        marginVertical:5,
+        marginHorizontal:1,
+        borderRadius:10,
+        ...mixins.boxShadow(colors.BLACK)
+  },
+  TextInputstyleItem:{
+   flex:1
+   
+},
+  TextInputstyleDate:{
+    width:80,
+    height:50,
+    backgroundColor:colors.WHITE,
+    marginVertical:5,
+    marginHorizontal:1,
+    borderRadius:10,
+    ...mixins.boxShadow(colors.BLACK)
+  },
+  containerDatepickerItem:{
+        margin:15,  
+  },
+  containerDatepicker:{
+        flexDirection:"row",
+  },
+  containerFlexInput:{
+        paddingHorizontal:10,
+        marginHorizontal:1,
+        alignItems:"center",
+        height:50,
+        flexDirection:"row",
+        backgroundColor:colors.WHITE,
+        borderRadius:10,
+        ...mixins.boxShadow(colors.BLACK)
+  },
+  Icon:{
+    transform:[{rotate:'-90deg'}],
+    color:colors.PRIMARY
+  },
+  ContainerButton:{
+        display:"flex",
+        alignItems:"center",
+        marginTop:15
+  },
+  btnButton:{
+        backgroundColor:colors.PRIMARY,
+        height:50,
+        width:110,
+        borderRadius:25
+
+   },
+   Textbtn:{
+        textAlign:"center",
+        color:colors.WHITE,
+        fontWeight:"bold",
+        fontSize:17,
+        marginTop:12
+   },
+   Parent:{
+      marginTop:10
+   },
+});

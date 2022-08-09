@@ -83,7 +83,7 @@ function ResgisterScreen({navigation}) {
                                 <Text style={styles.textInput}>Gender</Text>
                                 <View style={styles.containerParentCheckbox}>
                                         <View style={styles.containerCheckbox}>
-                                                 <View style={styles.containerCheckboxItem}>   
+                                                <View style={styles.containerCheckboxItem}>   
                                                         <CheckBox
                                                                 style={styles.CheckBox}  
                                                                 value={checked}
@@ -97,19 +97,18 @@ function ResgisterScreen({navigation}) {
                                         <View style={styles.containerCheckbox2}>
                                                 <View style={styles.containerCheckboxItem}>   
                                                         <CheckBox
-                                                        style={styles.CheckBox}
+                                                            style={styles.CheckBox}
                                                         />                    
                                                 </View>
                                                 <View style={styles.containerCheckboxItem}>
                                                         <Text style={styles.label2}>Femme</Text>
                                                 </View>
-                                        </View>
-                                        
+                                        </View>             
                                 </View>
                                 <Text style={styles.textInput}>Nationalité</Text>
                                 <View style={styles.Allcountry}>              
                                         <CountryPicker 
-                                        style={styles.countryPicker}
+                                                style={styles.countryPicker}
                                                 withFilter
                                                 countryCode={countryCode}
                                                 withFlag
@@ -148,7 +147,8 @@ function ResgisterScreen({navigation}) {
                                 </View>
                                 <Text style={styles.TextConfidentialite}>All of your information is confidential</Text>
                                 <TouchableOpacity 
-                                        style={styles.btnConnect}>
+                                   style={styles.btnConnect}
+                                >
                                         <Text style={styles.textConnect}>Continuer</Text>
                                 </TouchableOpacity>
 
@@ -163,7 +163,8 @@ function ResgisterScreen({navigation}) {
                                         </View>
                                  </View>
                               
-                        </View>
+                        </View> 
+                             
                     </View>
                     <View style={styles.slide2}>
                         <View style={styles.slideTop}>
@@ -192,25 +193,27 @@ function ResgisterScreen({navigation}) {
                                 </View>
                                 <View style={styles.ContainerPasser}>
                                         <View>
-                                        <Text style={styles.textPasser}>Passer</Text>
-
+                                                <Text style={styles.textPasser}>Passer</Text>
                                         </View>
                                  
                                 </View>
 
-                           <View style={styles.ContainerBtnNext2}>
-                                <Text style={styles.TextConfidentialite}>All of your information is confidential</Text>
-                                <TouchableOpacity 
-                                        style={styles.btnNext2}>
-                                        <Text style={styles.textBtnNext2}>Continuer</Text>
-                                </TouchableOpacity>
-                           </View>
+                                <View style={styles.ContainerBtnNext2}>
+                                        <Text style={styles.TextConfidentialite}>All of your information is confidential</Text>
+                                        <TouchableOpacity 
+                                                style={styles.btnNext2}>
+                                                <Text style={styles.textBtnNext2}>Continuer</Text>
+                                        </TouchableOpacity>
+                                </View>
                         </View>
                     </View>
                   
                     <View style={styles.slide3}>
                         <View style={styles.slideTop}>
-                            <Image source={slide3} style={styles.ImageSlide3} />  
+                            <Image 
+                                source={slide3} 
+                                style={styles.ImageSlide3}
+                             />  
                             <Text style={styles.TextSingup}>Mot de passe</Text>
                             <Text style={styles.textInput}>Step 3 of 3</Text>
                             <TouchableOpacity style={styles.level3}>

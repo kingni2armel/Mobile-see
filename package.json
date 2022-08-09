@@ -13,6 +13,7 @@
     "@digieggs/rn-country-code-picker": "^1.4.4",
     "@react-native-community/checkbox": "^0.5.12",
     "@react-native-picker/picker": "2.4.0",
+    "@react-navigation/bottom-tabs": "^6.3.2",
     "@react-navigation/native": "^6.0.11",
     "@react-navigation/native-stack": "^6.7.0",
     "@rneui/base": "^4.0.0-rc.5",
@@ -28,7 +29,9 @@
     "react-native-elements": "^3.4.2",
     "react-native-file": "^1.0.0",
     "react-native-file-access": "^2.4.4",
+    "react-native-paper": "^4.12.4",
     "react-native-swiper": "^1.6.0-rc.3",
+    "react-native-vector-icons": "^9.2.0",
     "react-native-web": "0.17.7",
     "react-navigation": "^4.4.4",
     "swiper": "^8.3.0"
