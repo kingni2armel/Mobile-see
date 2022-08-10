@@ -71,6 +71,7 @@ ContainerElement:{
     flexDirection:"row",
     justifyContent:"space-Around",
     flex:1,
+ 
 },
 ContainerElementItem1:{
     backgroundColor:colors.PRIMARY,

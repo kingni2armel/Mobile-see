@@ -30,10 +30,12 @@
     "react-native-file": "^1.0.0",
     "react-native-file-access": "^2.4.4",
     "react-native-paper": "^4.12.4",
+    "react-native-select-dropdown": "^2.0.4",
     "react-native-swiper": "^1.6.0-rc.3",
     "react-native-vector-icons": "^9.2.0",
     "react-native-web": "0.17.7",
     "react-navigation": "^4.4.4",
+    "rn-segmented-control": "^1.1.2",
     "swiper": "^8.3.0"
   },
   "devDependencies": {

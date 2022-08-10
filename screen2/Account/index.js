@@ -33,6 +33,15 @@ export default function AccountScreen({navigation}) {
                           </View>
                           <Text style={styles.TextCerifie}>@certifié</Text>
                       </View>
+                      <View style={styles.DataItemchild2}>
+                            <Ionicons
+                                name='menu-outline'
+                                size={24}
+                                style={styles.IconSidebar}
+                                onPress={()=>navigation.navigate('Edit')}
+
+                            />
+                      </View>
                 </View>
                 <View style={styles.ParentContainerSecond}>
                       <View style={styles.ContainerSecond}>
@@ -45,7 +54,7 @@ export default function AccountScreen({navigation}) {
                 </View>
                 <View style={styles.ParentContainerSecond}>
                       <View style={styles.ContainerSecond2}>
-                          <Text style={styles.TextIndication}>Thème : Sombre :</Text>
+                          <Text style={styles.TextIndication}>Thème : Sombre</Text>
                           <View style={styles.ContainerRadius}><RadioButton/></View>
                        </View>
                 </View>
@@ -73,7 +82,7 @@ export default function AccountScreen({navigation}) {
                                 size={20}
                                 style={styles.IconDash}
                             />
-                            <Text style={styles.TextDash}>Tracking order</Text>
+                            <Text style={styles.TextDash}>Annonces de voyages</Text>
                       </View>
                       <View style={styles.Dash}>
                             <Ionicons
@@ -81,11 +90,11 @@ export default function AccountScreen({navigation}) {
                                 size={20}
                                 style={styles.IconDash}
                             />
-                            <Text style={styles.TextDash}>Demandes reçues</Text>
+                            <Text style={styles.TextDash}>Tracking order</Text>
                       </View>
                       <View style={styles.Dash}>
                             <Ionicons
-                                name='domain-verification                                '
+                                name='checkmark-circle-sharp'
                                 size={20}
                                 style={styles.IconDash}
                             />
@@ -96,18 +105,26 @@ export default function AccountScreen({navigation}) {
                                 name='settings-sharp'
                                 size={20}
                                 style={styles.IconDash}
-                                onPress={()=>navigation.navigate('Preference')}
-
                             />
-                            <Text style={styles.TextDash}>Preferences</Text>
+                            <Text
+                                 style={styles.TextDash}
+                                 onPress={()=>navigation.navigate('Preference')}
+                            >
+                                    Preferences
+                            </Text>
                       </View>
                       <View style={styles.Dash}>
                             <Ionicons
                                 name='ios-help-circle'
                                 size={20}
-                                style={styles.IconDash}
+                                style={styles.IconDash}                        
                             />
-                            <Text style={styles.TextDash}>Centre d’aide</Text>
+                            <Text 
+                                    style={styles.TextDash}
+                                    onPress={()=>navigation.navigate('Aide')}
+                            >
+                                Centre d’aide
+                            </Text>
                       </View>
                 </View>
                 <View style={styles.Line}></View>

@@ -9,7 +9,12 @@ import ResgisterScreen from '../screens/Register';
 import TabNavigation from './TabNavigator';
 import ContactScreen from '../screen2/Contact';
 import PrefereceScreen from '../screen2/Preference';
-
+import UpdatePasswordScreen from '../screen2/Update/Password';
+import UpdateLangueScreen from '../screen2/Update/Langue';
+import ThemeScreen from '../screen2/Update/Theme';
+import AnnonceScreen from '../screen2/Annonce';
+import UpdateProfilScreen from '../screen2/Update/Profile';
+import AideScreen from '../screen2/Aide';
 const Stack = createNativeStackNavigator();
 
 function AuthStack() {
@@ -50,6 +55,36 @@ function AuthStack() {
                 name="Preference"
                 options={{headerShown:true}}
                 component={PrefereceScreen}
+            />
+             <Stack.Screen
+                name="Password"
+                options={{headerShown:true}}
+                component={UpdatePasswordScreen}
+            />
+            <Stack.Screen
+                name="Langue"
+                options={{headerShown:true}}
+                component={UpdateLangueScreen}
+            />
+            <Stack.Screen
+                name="Theme"
+                options={{headerShown:true}}
+                component={ThemeScreen}
+            />
+            <Stack.Screen
+                name="Annonce"
+                options={{headerShown:true}}
+                component={AnnonceScreen}
+            />
+            <Stack.Screen
+                name="Edit"
+                options={{headerShown:true}}
+                component={UpdateProfilScreen}
+            />
+             <Stack.Screen
+                name="Aide"
+                options={{headerShown:true}}
+                component={AideScreen}
             />
       </Stack.Navigator> 
   );

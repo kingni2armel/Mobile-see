@@ -1,7 +1,7 @@
-import { colors,mixins } from "../../styles";
+import { colors,mixins } from "../../../styles";
 
 import {StyleSheet } from 'react-native';
-import { FontFamily } from "../../styles/mixins";
+import { FontFamily } from "../../../styles/mixins";
 export const styles = StyleSheet.create({
   
 ContainerParent:{
@@ -12,6 +12,8 @@ ContainerParent:{
 },
 ContainerItem:{
     height:50,
+    backgroundColor:colors.OPACITYCOLOR,
+    opacity:0.3,
     ...mixins.boxShadow(colors.BLACK),
 },
 ContainerItem2:{
@@ -25,18 +27,13 @@ TextCoount:{
     fontWeight:"bold",
     marginLeft:17,
     fontSize:18,
-    marginTop:20,
+    marginTop:15,
     fontFamily:FontFamily
 },
 Textbtn:{
     marginLeft:20,
-    fontSize:16,
-    marginTop:17,
-    fontFamily:FontFamily
-},
-TextbtnItem:{
-    marginLeft:20,
-    fontSize:16,
+    fontSize:18,
+    marginTop:15,
     fontFamily:FontFamily
 },
 Icon:{

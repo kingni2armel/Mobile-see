@@ -9,7 +9,7 @@ import TrajetScreen from '../screen2/Trajet';
 import ExpedierScreen from '../screen2/Expedier';
 import ChatScreen from '../screen2/Chat';
 import AccountScreen from '../screen2/Account';
-
+import AnnonceScreen from '../screen2/Annonce';
 const Tab = createBottomTabNavigator();
 
 
@@ -42,7 +42,7 @@ function TabNavigation()
             />  
             <Tab.Screen 
                 name="Expedier" 
-                component={ExpedierScreen}   
+                component={AnnonceScreen}   
                 options={{
                     tabBarIcon: ({color, size}) => (
                         <Ionicons

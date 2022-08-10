@@ -1,0 +1,169 @@
+import { colors,mixins } from "../../styles";
+import {StyleSheet } from 'react-native';
+import { FontFamily } from "../../styles/mixins";
+export const styles = StyleSheet.create({
+  
+ContainerParent:{
+    backgroundColor:colors.WHITE,
+    flex:1
+},
+Parent:{
+    padding:10
+},
+ParentItemFirst:{
+    alignItems:"flex-end"
+},
+TextAnnuler:{
+    color:colors.PRIMARY,
+    fontWeight:"bold",
+    fontFamily:FontFamily,
+    fontSize:16
+},
+TextcentreAide:{
+    fontSize:22,
+    fontWeight:"bold",
+    fontFamily:FontFamily,
+    color:colors.VIOLET
+},
+FirstConteiner:{
+    flexDirection:"row",
+    marginTop:5
+},
+FirstConteiner2:{
+    flexDirection:"row",
+    marginTop:15
+},
+textAstuce:{
+        marginLeft:4,
+        color:colors.PRIMARY
+},
+Icon:{
+    color:colors.PRIMARY
+},
+ContainerTextDescription:{
+    marginTop:5
+},
+TextDescription:{
+    color:colors.GRISE2,
+    fontFamily:FontFamily
+},
+ContaineAide:{
+    marginHorizontal:1,
+    height:70,
+    flexDirection:"row",
+    alignItems:"center",
+    justifyContent:"center",
+    backgroundColor:colors.WHITE2,
+    borderRadius:10,
+    ...mixins.boxShadow(colors.PRIMARY),
+    margin:5,
+},
+ContainerTutoriel:{
+    marginHorizontal:1,
+    height:80,
+    flexDirection:"row",
+    alignItems:"center",
+    justifyContent:"center",
+    backgroundColor:colors.WHITE2,
+    borderRadius:10,
+    ...mixins.boxShadow(colors.PRIMARY),
+    margin:5,
+},
+IoniconsIcon1:{
+    color:colors.VERT,
+    fontSize:23
+},
+IoniconsIcon2Item:{
+    color:colors.PRIMARY,
+    fontSize:23
+},
+textContacter:{
+    color:colors.PRIMARY,
+    fontWeight:"bold",
+    fontFamily:FontFamily,
+    marginLeft:8,
+    fontSize:18
+},
+ContainerImage:{
+    justifyContent:"center",
+    alignItems:"center",
+    marginTop:20
+},
+ImageHelp:{
+    height:165,
+    width:300,
+},
+ContainerIcon:{
+    justifyContent:"center",
+    flexDirection:"row",
+    marginHorizontal:1,
+    marginTop:25
+
+  },
+  ContainerIconItemIcon:{
+    flexDirection:"row",
+    marginTop:-10
+  },
+  TextSuiveznous:{
+    color:colors.PRIMARY,
+    fontFamily:FontFamily,
+    fontSize:15,
+    fontWeight:"bold",
+    marginLeft:-20,
+    marginTop:5
+    
+  },
+  IconItem1:{
+    height:40,
+    width:40,
+    backgroundColor:colors.WHITE,
+    borderWidth:1,
+    borderColor:colors.PRIMARY,
+    borderRadius:80,
+    margin:3
+  },
+  IconItem2:{
+    height:40,
+    width:40,
+    backgroundColor:colors.WHITE,
+    borderWidth:1,
+    borderColor:colors.TWITTER,
+    borderRadius:80,
+    margin:3
+  },
+  IconItem3:{
+    height:40,
+    width:40,
+    backgroundColor:colors.WHITE,
+    borderWidth:1,
+    borderColor:colors.RED,
+    borderRadius:80,
+    margin:3
+  },
+
+  IoniconsIcon2:{
+    fontSize:22,
+    color:colors.PRIMARY,
+    flex:1,
+    textAlign:"center",
+    marginTop:8
+
+},
+IoniconsIcon3:{
+    fontSize:22,
+    color:colors.TWITTER,
+    flex:1,
+    textAlign:"center",
+    marginTop:8
+},
+IoniconsIcon4:{
+    fontSize:22,
+    color:colors.RED,
+    flex:1,
+    textAlign:"center",
+    marginTop:8
+},
+
+
+
+});

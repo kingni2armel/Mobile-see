@@ -106,36 +106,36 @@ TextChildren2:{
     margin:3
   },
   IoniconsIcon1:{
-        fontSize:27,
-        color:colors.VERT,
-        flex:1,
-        textAlign:"center",
-        marginTop:3
+    fontSize:22,
+    color:colors.VERT,
+    flex:1,
+    textAlign:"center",
+    marginTop:8
 
   },
   IoniconsIcon2:{
-    fontSize:27,
+    fontSize:22,
     color:colors.PRIMARY,
     flex:1,
     textAlign:"center",
-    marginTop:3
+    marginTop:8
 
 },
 IoniconsIcon3:{
-    fontSize:27,
+    fontSize:22,
     color:colors.BLACK,
     flex:1,
     textAlign:"center",
-    marginTop:3
+    marginTop:8
 },
 IoniconsIcon4:{
-    fontSize:27,
+    fontSize:22,
     color:colors.TWITTER,
     flex:1,
     textAlign:"center",
-    marginTop:3
+    marginTop:8
 },
-IconShop:{
+IconalignItems:"center",Shop:{
     marginTop:10,
     marginLeft:-8
 },
@@ -165,7 +165,7 @@ WRAP:{
 },
 TextCommentaire:{
     textAlign:"center",
-    color:colors.GRISE2,
+    color:colors.GRIconSidebarIconSidebarISE2,
     marginTop:-15
 },
 Image:{

@@ -19,6 +19,12 @@ export const styles = StyleSheet.create({
         backgroundColor:colors.GRISE5,
         width:290,
         borderTopRightRadius:42,
+        flexDirection:"row",
+        justifyContent:"space-between"
+    },
+
+    DataItemchild2:{
+        marginTop:40
     },
     DataItemchild:{
         padding:20
@@ -92,6 +98,11 @@ export const styles = StyleSheet.create({
         fontSize:14,
         marginLeft:8,
         marginTop:2
+    },
+    IconSidebar:{
+        color:colors.WHITE,
+        marginLeft:-50,
+        marginTop:25
     }
 
 });

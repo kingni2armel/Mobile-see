@@ -15,7 +15,7 @@ import france from  '../../assets/images/france.png'
 import { RadioButton } from 'react-native-paper';
 
 
-export default function PrefereceScreen() {Ionicons
+export default function PrefereceScreen({navigation}) {Ionicons
   return (
          <View style={styles.ContainerParent}>
                 <View style={styles.ContainerItem}>
@@ -43,6 +43,8 @@ export default function PrefereceScreen() {Ionicons
                                     name='ios-chevron-forward-sharp'
                                     size={20}
                                     style={styles.Icon}
+                                    onPress={()=>navigation.navigate('Password')}
+
                                 />
                         </View>
                 </View>
@@ -55,6 +57,8 @@ export default function PrefereceScreen() {Ionicons
                                     name='ios-chevron-forward-sharp'
                                     size={20}
                                     style={styles.Icon}
+                                    onPress={()=>navigation.navigate('Langue')}
+                                    
                                 />
                         </View>
                 </View>
@@ -67,6 +71,8 @@ export default function PrefereceScreen() {Ionicons
                                     name='ios-chevron-forward-sharp'
                                     size={20}
                                     style={styles.Icon}
+                                    onPress={()=>navigation.navigate('Theme')}
+
                                 />
                         </View>
                 </View>
@@ -89,7 +95,10 @@ export default function PrefereceScreen() {Ionicons
                 <View style={styles.ContainerItem2}>
                         <View>
                                 <Text style={styles.Textbtn}>
-                                        Receive notifications on latest offers and store updates
+                                        Receive notifications on latest offers and store 
+                                </Text>
+                                <Text style={styles.TextbtnItem}>
+                                         updates
                                 </Text>
                             
                         </View>
