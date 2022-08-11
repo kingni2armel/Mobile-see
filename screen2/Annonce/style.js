@@ -66,7 +66,7 @@ activeBadgeStyle:{
   
 },
 componentImage:{
-    width:90,
+    width:120,
     height:8
 }
 

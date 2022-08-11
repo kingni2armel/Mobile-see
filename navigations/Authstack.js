@@ -15,6 +15,9 @@ import ThemeScreen from '../screen2/Update/Theme';
 import AnnonceScreen from '../screen2/Annonce';
 import UpdateProfilScreen from '../screen2/Update/Profile';
 import AideScreen from '../screen2/Aide';
+import HomeScreenAlert from '../screen2/Alert/Home';
+import CreateAlertScreen from '../screen2/Alert/Create';
+import ListeAlertScreen from '../screen2/Alert/Liste';
 const Stack = createNativeStackNavigator();
 
 function AuthStack() {
@@ -85,6 +88,21 @@ function AuthStack() {
                 name="Aide"
                 options={{headerShown:true}}
                 component={AideScreen}
+            />
+            <Stack.Screen
+                name="Alert"
+                options={{headerShown:true}}
+                component={HomeScreenAlert}
+            />
+            <Stack.Screen
+                name="Create"
+                options={{headerShown:true}}
+                component={CreateAlertScreen}
+            />
+             <Stack.Screen
+                name="Liste"
+                options={{headerShown:true}}
+                component={ListeAlertScreen}
             />
       </Stack.Navigator> 
   );

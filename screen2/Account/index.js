@@ -74,7 +74,12 @@ export default function AccountScreen({navigation}) {
                                 size={20}
                                 style={styles.IconDash}
                             />
-                            <Text style={styles.TextDash}>Alertes</Text>
+                            <Text 
+                                style={styles.TextDash}
+                                onPress={()=>navigation.navigate('Alert')}
+                            >
+                                Alertes
+                            </Text>
                       </View>
                       <View style={styles.Dash}>
                             <Ionicons

@@ -8,7 +8,7 @@ ContainerParent:{
     flex:1
 },
 Parent:{
-    padding:10
+    padding:25
 },
 ParentItemFirst:{
     alignItems:"flex-end"

@@ -11,7 +11,6 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 import airplane from  '../../assets/images/airplane.png'
 import component from  '../../assets/images/component.png'
-
 import cameroun from  '../../assets/images/cameroun.png'
 import france from  '../../assets/images/france.png'
 import { RadioButton } from 'react-native-paper';
