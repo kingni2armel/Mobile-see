@@ -9,6 +9,7 @@ import Feather from 'react-native-vector-icons/Feather'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 import { RadioButton } from 'react-native-paper';
+import ButtonUpdate from '../../../Component/ButtonUpdate';
 import {styles} from './style'
 
 export default function UpdatePasswordScreen() {Ionicons
@@ -56,16 +57,9 @@ export default function UpdatePasswordScreen() {Ionicons
                              placeholder='Confirm Password'
                              style={styles.TextInput}
                              secureTextEntry={true}
-                        />
-                                      
+                        />                
                 </View>
-                <View style={styles.ContainerItem2}>
-                 
-                        <TouchableOpacity>
-                                <Text style={styles.TextButton}>Update</Text>  
-                        </TouchableOpacity> 
-                                      
-                </View>
+               <ButtonUpdate/>
                
         </View>
   );

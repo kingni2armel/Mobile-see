@@ -96,6 +96,7 @@ export const styles = StyleSheet.create({
         marginTop:12
    },
    Parent:{
-      marginTop:10
+      marginTop:10,
+      margin:8
    },
 });

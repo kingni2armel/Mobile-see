@@ -12,7 +12,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import Feather from 'react-native-vector-icons/Feather'
 import SelectDropdown from 'react-native-select-dropdown'
-
+import DateCompent from '../../../Component/Date';
+import ButtonUpdate from '../../../Component/ButtonUpdate';
 function UpdateProfilScreen({navigation}) {
         const [checked, setChecked] = React.useState(false);
         const [country, setCountry] = React.useState('Unknown');
@@ -27,7 +28,6 @@ function UpdateProfilScreen({navigation}) {
         const selectFile = async () => {
                 try {
                   const res = await DocumentPicker.pick({
-                
                     type: [DocumentPicker.types.allFiles],
                    
                   });
@@ -47,58 +47,41 @@ function UpdateProfilScreen({navigation}) {
         
                 <ScrollView>
                         <View style = {styles.container}>
-                                <View style={styles.slide1}>
-                                        <View style={styles.slideTop}>
-                                                <View style={styles.TitleSingup}>
-                                                        <Image 
-                                                                source={drake}
-                                                                style={styles.Image}
-                                                        />
-                                                        <AntDesign
-                                                                name="edit"
-                                                                size={25}
-                                                                style={styles.IconEdit}
-
-                                                        />
-                                                </View>
-                                        
+                           <View style={styles.slide1}>
+                              <View style={styles.slideTop}>
+                                        <View style={styles.TitleSingup}>
+                                                <Image 
+                                                        source={drake}
+                                                        style={styles.Image}
+                                                />
+                                                <AntDesign
+                                                        name="edit"
+                                                        size={25}
+                                                        style={styles.IconEdit}
+                                                />
+                                        </View>                              
+                                        <View style={styles.containerBox}>
                                                 <Text style={styles.textInput}>Username</Text>
                                                 <View style={styles.ContainerItem}>
-                                                        <Ionicons
-                                                                name="person-sharp"
-                                                                size={30}
-                                                                style={styles.Icon}
+                                                   <Ionicons
+                                                        name="person-sharp"
+                                                        size={30}
+                                                        style={styles.Icon}
 
-                                                        />
-                                                        <TextInput
-                                                                placeholder='John Williams'
-                                                                style={styles.TextInput}
-                                                        />
+                                                  />
+                                                 <TextInput
+                                                        placeholder='John Williams'
+                                                        style={styles.TextInput}
+                                                  />
                                                 
                                                 </View>
-                                                <Text style={styles.textInput}>Email</Text>
-                                                <View style={styles.ContainerItem}>
-                                                        <Ionicons
-                                                                name="mail-sharp"
-                                                                size={30}
-                                                                style={styles.Icon}
-
-                                                        />
-                                                        <TextInput
-                                                                placeholder='John.william@gmail.com'
-                                                                style={styles.TextInput}
-                                                        />
-                                                
-                                                </View>
+                                        </View>
+                                        <View style={styles.containerBox}>
                                                 <Text style={styles.textInput}>Date de Naissance</Text>
-                                                <View style={styles.ContainerItem3}>
-                                                        <View style={styles.ItemDate}>
-                                                        </View>
-                                                        <View style={styles.ItemDate}>
-                                                        </View>
-                                                        <View style={styles.ItemDate}>
-                                                        </View>
-                                                </View>
+                                                <DateCompent
+                                                />
+                                        </View>
+                                        <View style={styles.containerBox}>
                                                 <Text style={styles.textInput}>Genre</Text>
                                                 <View style={styles.ContainerItem}>
                                                         <Ionicons
@@ -107,58 +90,60 @@ function UpdateProfilScreen({navigation}) {
                                                                 style={styles.Icon}
 
                                                         />
-                                                      <SelectDropdown
-                                                                selectedRowStyle={styles.Dropdown}
-                                                                data={gender}
-                                                                onSelect={(selectedItem, index) => {
-                                                                        console.log(selectedItem, index)
-                                                                }}
-                                                                buttonTextAfterSelection={(selectedItem, index) => {
-                
-                                                                        return selectedItem
-                                                                }}
-                                                                rowTextForSelection={(item, index) => {
-            
-                                                                        return item
-                                                                }}
+                                                        <SelectDropdown
+                                                           selectedRowStyle={styles.Dropdown}
+                                                           data={gender}
+                                                           onSelect={(selectedItem, index) => {
+                                                                console.log(selectedItem, index)
+                                                           }}
+                                                           buttonTextAfterSelection={(selectedItem, index) => {
+                                                                return selectedItem
+                                                          }}
+                                                        rowTextForSelection={(item, index) => {
+
+                                                                return item
+                                                        }}
                                                         />                                      
                                                 </View>
-
+                                        </View>
+                                        <View style={styles.containerBox}> 
                                                 <Text style={styles.textInput}>Telephone</Text>
                                                 <View style={styles.ContainerItem}>
                                                         <CallingCodePicker
                                                                 style={styles.countryPicker} 
                                                                 onValueChange={callingCode => setSelectedCallingCode(callingCode)}
-                                                        />
-                                                
+                                                        />                                                
                                                 </View>
+                                        </View>
+                                        <View  style={styles.containerBox}>
                                                 <Text style={styles.textInput}>Nationalité</Text>
                                                 <View style={styles.ContainerItem}>
                                                         <View style={styles.Itemcountry}>
                                                                 <CountryPicker 
-                                                                        style={styles.countryPicker}
-                                                                        withFilter
-                                                                        countryCode={countryCode}
-                                                                        withFlag
-                                                                        withAlphaFilter={false}
-                                                                        withCurrencyButton={false}
-                                                                        onSelect={country=>{
-                                                                        console.log('country',country)
-                                                                        const {cca2,callingCode} = country;
-                                                                        setCountryCode(cca2)
-                                                                        SetcallingCode(callingCode[0])
-                                                                                        
-                                                                        }}
-                                                                />
+                                                                style={styles.countryPicker}
+                                                                withFilter
+                                                                countryCode={countryCode}
+                                                                withFlag
+                                                                withAlphaFilter={false}
+                                                                withCurrencyButton={false}
+                                                                onSelect={country=>{
+                                                                console.log('country',country)
+                                                                const {cca2,callingCode} = country;
+                                                                setCountryCode(cca2)
+                                                                SetcallingCode(callingCode[0])
+                                                                                
+                                                                }}
+                                                        />
                                                         </View>
                                                 </View>
-                                                <View style={styles.ContainerItem2}>
-                                                        <TouchableOpacity>
-                                                                <Text style={styles.TextButton}>Update</Text>  
-                                                        </TouchableOpacity>        
-                                                </View>
-                                        </View> 
-                                </View>   
+                                        </View>
+                                        <View style={styles.ContainerItem2}>
+                                                <TouchableOpacity>
+                                                        <Text style={styles.TextButton}>Update</Text>  
+                                                </TouchableOpacity>        
+                                        </View>
+                              </View> 
+                          </View>   
                         </View> 
                 </ScrollView>
         );

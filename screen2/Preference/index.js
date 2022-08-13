@@ -24,13 +24,17 @@ export default function PrefereceScreen({navigation}) {Ionicons
 
                 <View style={styles.ContainerItem2}>
                         <View>
-                                <Text style={styles.Textbtn}>Modifier mon email</Text>
+                                <Text
+                                 style={styles.Textbtn}>
+                                        Modifier mon email
+                                </Text>
                         </View>
                         <View>
                                 <Ionicons 
                                     name='ios-chevron-forward-sharp'
                                     size={20}
                                     style={styles.Icon}
+                                    onPress={()=>navigation.navigate('Email')}
                                 />
                         </View>
                 </View>

@@ -12,7 +12,6 @@ import france from  '../../../assets/images/france.png'
 import component from  '../../../assets/images/component.png'
 import airplane2 from  '../../../assets/images/airplane2.png'
 
-
 export default function ListeAlertScreen({navigation}) 
 {
   const [tabIndex,setTabIndex] = React.useState(0)
@@ -29,61 +28,63 @@ export default function ListeAlertScreen({navigation})
                                     </Text>
                               </View>
                               <View style={styles.containerBtn}>
-                                        <ButtonCreateAlert
-                                              onPress={()=>navigation.navigate('Create')}
-                                        />                         
+                                    <ButtonCreateAlert
+                                          onPress={()=>navigation.navigate('Create')}
+                                    />                         
                               </View>
                               <View>
-                                     <Text style={styles.NombreTrajet}>Total: 2</Text>
+                                  <Text 
+                                    style={styles.NombreTrajet}
+                                    onPress={()=>navigation.navigate('Modifier')}
+                                  >
+                                    Total: 2
+                                  </Text>
                               </View>
                               <View style={styles.ContainerHeader}>
                               
                                 <View style={styles.ParentContainerHearderItem}>
                                   {/* debut du bloc a renvoyer plusieurs fois  */}
-                                        <View style={styles.ContainerHeaderItem2}>
+                                    <View style={styles.ContainerHeaderItem2}>
+                                            <View>
                                                 <View>
-                                                    <View>
-                                                        <Image source={component} style={styles.componentImage} resizeMode='contain' />
-                                                    </View>
-                                                    <View style={styles.containerCity}>
-                                                            <View>
-                                                                    <Text>PARIS (PAR) -</Text>
-                                                                    <Text style={styles.pays}>
-                                                                            France
-                                                                            <Image source={france} style={styles.Image2} resizeMode='contain' />
-                                                                    </Text>
-                                                            </View>
-                                                            <View>
-                                                                    <Text>Douala (DLA) </Text>
-                                                                    <Text style={styles.pays}>
-                                                                            Cameroun
-                                                                            <Image source={cameroun} style={styles.Image2} resizeMode='contain' />
-                                                                    </Text>
-                                                            </View>
-                                                     </View>
-                                                     <Text style={styles.TextDatePLustard}>Au plus tard le 27 juin 2022</Text>
+                                                    <Image source={component} style={styles.componentImage} resizeMode='contain' />
                                                 </View>
-                                                <View style={styles.ContainerImageAirplane}>
-                                                    <Image 
-                                                        source={airplane2} 
-                                                        resizeMode='contain'
-                                                        style={styles.ImageAvion}
+                                                <View style={styles.containerCity}>
+                                                        <View>
+                                                                <Text>PARIS (PAR) -</Text>
+                                                                <Text style={styles.pays}>
+                                                                        France
+                                                                        <Image source={france} style={styles.Image2} resizeMode='contain' />
+                                                                </Text>
+                                                        </View>
+                                                        <View>
+                                                                <Text>Douala (DLA) </Text>
+                                                                <Text style={styles.pays}>
+                                                                        Cameroun
+                                                                        <Image source={cameroun} style={styles.Image2} resizeMode='contain' />
+                                                                </Text>
+                                                        </View>
+                                                  </View>
+                                                  <Text style={styles.TextDatePLustard}>Au plus tard le 27 juin 2022</Text>
+                                            </View>
+                                            <View style={styles.ContainerImageAirplane}>
+                                                <Image 
+                                                    source={airplane2} 
+                                                    resizeMode='contain'
+                                                    style={styles.ImageAvion}
+                                                />
+                                                <View style={styles.ContainerStatut}>
+                                                    <Text style={styles.TextStatut}>Activée</Text>
+                                                    <Ionicons
+                                                      name='notifications-outline'
+                                                      size={15}
                                                     />
-                                                    <View style={styles.ContainerStatut}>
-                                                        <Text style={styles.TextStatut}>Activée</Text>
-                                                        <Ionicons
-                                                          name='notifications-outline'
-                                                          size={15}
-                                                        />
-                                                    </View>
                                                 </View>
+                                            </View>
                                          </View>
-                                  {/* du bloc a renvoyer plusieurs fois  */}
-                                       
+                                  {/* du bloc a renvoyer plusieurs fois  */}0                                      
                                 </View>
-                                
-                             </View> 
-                              
+                             </View>                        
                     </ScrollView>                  
               </View>
   );

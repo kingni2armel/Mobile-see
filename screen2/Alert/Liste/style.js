@@ -35,7 +35,8 @@ containerBtn:{
 
 ParentContainerHearderItem:{
     flexDirection:"row",
-    justifyContent:"space-between",
+    alignItems:"space-between",
+    justifyContent:"center",
     marginTop:50
 },
 containerCity:{
@@ -79,7 +80,11 @@ ImageAvion:{
     width:55
 },
 ContainerHeaderItem2:{
-   flexDirection:"row"
+   flexDirection:"row",
+   justifyContent:"space-between",
+   alignItems:"flex-start",
+   padding:10,
+   flex:1
 },
 ContainerImageAirplane:{
     marginLeft:25,

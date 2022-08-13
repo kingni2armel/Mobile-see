@@ -1,6 +1,7 @@
 import { colors,mixins } from "../../styles";
 
 import {StyleSheet } from 'react-native';
+import { FontFamily } from "../../styles/mixins";
 export const styles = StyleSheet.create({
   
 ContainerParent:{
@@ -128,6 +129,9 @@ IoniconsIcon3:{
     textAlign:"center",
     marginTop:8
 },
+IconShop:{
+    marginTop:10
+},
 IoniconsIcon4:{
     fontSize:22,
     color:colors.TWITTER,
@@ -165,8 +169,10 @@ WRAP:{
 },
 TextCommentaire:{
     textAlign:"center",
-    color:colors.GRIconSidebarIconSidebarISE2,
-    marginTop:-15
+    color:colors.GRISE2,
+    marginTop:-15,
+    fontFamily:FontFamily,
+    fontSize:15
 },
 Image:{
     height:50,

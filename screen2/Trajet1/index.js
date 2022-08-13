@@ -6,6 +6,7 @@ import Swiper from 'react-native-swiper/src';
 import { colors } from "../../styles";
 import { TouchableOpacity } from 'react-native-web';
 import Ionicons from 'react-native-vector-icons/Ionicons'
+import DateCompent from '../../Component/Date';
 
 export default function LeveloneScreen() {
 
@@ -32,87 +33,39 @@ export default function LeveloneScreen() {
                                             />
                                     </View> 
                                 </View>           
-                                <View>
+                                <View style={styles.Parent}>
                                     < Text style={styles.LabelText}>Ville de depart
                                       <Ionicons
                                             name='ios-location'
-                                            size={20}
-                                    
+                                            size={20}                          
                                         />
-                                    </Text>
-                                      
+                                    </Text>                                
                                       <TextInput
                                         style={styles.TextInputstyle}
                                         placeholder='Douala'
-
                                       />
                                 </View>
-                                <View>
-                                    < Text style={styles.LabelText}>Date de départ </Text>
-                                      
-                                      <View style={styles.containerDatepicker}>
-                                            <View style={styles.containerDatepickerItem}>
-                                              <Text>Month</Text>
-                                                <TextInput
-                                                    style={styles.TextInputstyleDate}
-                                                    placeholder='May' 
-                                                />
-                                            </View>
-                                            <View  style={styles.containerDatepickerItem}>
-                                              <Text>Day</Text>
-                                                <TextInput
-                                                    style={styles.TextInputstyleDate}
-                                                    placeholder='17' 
-                                                />
-                                            </View>
-                                            <View  style={styles.containerDatepickerItem}>
-                                              <Text>Year</Text>
-                                                <TextInput
-                                                    style={styles.TextInputstyleDate}
-                                                    placeholder='1991' 
-                                                />
-                                            </View>
-                                      </View>
+                                <View style={styles.Parent}>
+                                    <DateCompent
+                                      text="Date de départ"
+                                    />
                                 </View>
-                                  <View>
+                                <View style={styles.Parent}>
                                     < Text style={styles.LabelText}>Ville d'arrivée
                                       <Ionicons
                                             name='ios-location'
                                             size={20}
                                         />
-                                    </Text>
-                                      
-                                      <TextInput
+                                    </Text>                   
+                                    <TextInput
                                         style={styles.TextInputstyle}
                                         placeholder='Douala'
-
                                       />
                                 </View>
-                                <View>
-                                    <Text style={styles.LabelText}>Date de départ </Text>           
-                                    <View style={styles.containerDatepicker}>
-                                          <View style={styles.containerDatepickerItem}>
-                                            <Text>Month</Text>
-                                              <TextInput
-                                                  style={styles.TextInputstyleDate}
-                                                  placeholder='May' 
-                                              />
-                                          </View>
-                                          <View  style={styles.containerDatepickerItem}>
-                                            <Text>Day</Text>
-                                              <TextInput
-                                                  style={styles.TextInputstyleDate}
-                                                  placeholder='17' 
-                                              />
-                                          </View>
-                                          <View  style={styles.containerDatepickerItem}>
-                                            <Text>Year</Text>
-                                              <TextInput
-                                                  style={styles.TextInputstyleDate}
-                                                  placeholder='1991' 
-                                              />
-                                          </View>
-                                    </View>
+                                <View style={styles.Parent}>
+                                    <DateCompent
+                                        text="Date d'arrivée"
+                                    />
                                 </View>
                                 <View style={styles.ContainerButton}>
                                         <TouchableOpacity style={styles.btnButton}>

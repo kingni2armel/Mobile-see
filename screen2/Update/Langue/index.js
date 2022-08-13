@@ -10,6 +10,7 @@ import Feather from 'react-native-vector-icons/Feather'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 import { RadioButton } from 'react-native-paper';
+import ButtonUpdate from '../../../Component/ButtonUpdate';
 
 
 export default function UpdateLangueScreen({navigation}) {Ionicons

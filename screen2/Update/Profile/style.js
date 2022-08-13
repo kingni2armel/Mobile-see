@@ -95,6 +95,9 @@ Dropdown:{
   ...mixins.boxShadow(colors.BLACK),
   margin:5,
   borderRadius:35
+},
+containerBox:{
+  margin:5
 }
 
 });

@@ -48,6 +48,10 @@ Info:{
     flexDirection:"row",
     marginTop:15
 },
+Info2:{
+    flexDirection:"row",
+    marginTop:50
+},
 Icon:{
     color:colors.PRIMARY
 },
@@ -73,100 +77,29 @@ ContainerElement:{
     flex:1,
  
 },
-ContainerElementItem1:{
-    backgroundColor:colors.PRIMARY,
-    // flexDirection:"row",
-    flex:1.3,
-    height:50,
-    borderRadius:35,
-    marginTop:5
-},
-ContainerElementItem2:{
-    // flexDirection:"row",
-    backgroundColor:colors.WHITE,
-    borderWidth:1,
-    borderColor:colors.PRIMARY,
-    height:50,
-    borderRadius:35,
-    flex:1,
-    margin:5
-},
-TextElement1:{
+
+TextElement:{
     textAlign:"center",
-    paddingTop:15,
+    padding:15,
     color:colors.WHITE,
     fontFamily:FontFamily
 },
-TextElement2:{
-    textAlign:"center",
-    paddingTop:15,
-    color:colors.PRIMARY,
-    fontFamily:FontFamily
-},
+
 Radius2:{
     borderWidth:1,
     borderColor:colors.WHITE,
-    marginLeft:8,
-    marginTop:5
 },
 
-ContainerElementItem3:{
+ContainerElementItem:{
     backgroundColor:colors.PRIMARY,
-    // flexDirection:"row",
-    flex:1,
+    flexDirection:"row",
+    justifyContent:"center",
+    alignItems:"flex-end",
     height:50,
     borderRadius:35,
-    marginTop:5
-},
-ContainerElementItem4:{
-    // flexDirection:"row",
-    backgroundColor:colors.WHITE,
-    borderWidth:1,
-    borderColor:colors.PRIMARY,
-    height:50,
-    borderRadius:35,
-    flex:1.3,
-    margin:5
-},
-TextElement3:{
-    textAlign:"center",
-    paddingTop:15,
-    color:colors.WHITE,
-    fontFamily:FontFamily
-},
-TextElement4:{
-    textAlign:"center",
-    paddingTop:15,
-    color:colors.PRIMARY,
-    fontFamily:FontFamily
+    margin:10
 },
 
-ContainerElementItem5:{
-    backgroundColor:colors.WHITE,
-    borderWidth:1,
-    borderColor:colors.PRIMARY,
-    // flexDirection:"row",
-    flex:0.5,
-    height:50,
-    borderRadius:35,
-    marginTop:5
-},
-ContainerElementItem6:{
-    // flexDirection:"row",
-    backgroundColor:colors.WHITE,
-    borderWidth:1,
-    borderColor:colors.PRIMARY,
-    height:50,
-    borderRadius:35,
-    flex:0.3,
-    margin:5
-},
-TextElement5:{
-    textAlign:"center",
-    paddingTop:15,
-    color:colors.BLACK,
-    fontFamily:FontFamily
-},
 ContainerElementLast:{
     flexDirection:"row",
     justifyContent:"flex-start",
@@ -179,16 +112,16 @@ TextSouhait:{
 ParentContainerButton:{
     alignItems:"center",
     flex:1,
+    height:50,
 },
 ContainerButton:{
     justifyContent:"space-around",
-    alignItems:"center",
-    flexDirection:"row",
-    flex:1,
+    width:200,  
+    height:50,
     marginTop:15,
     backgroundColor:colors.WHITE,
-    height:50,
-    width:200,  
+    alignItems:"center",
+    flexDirection:"row",
     borderWidth:1,
     borderColor:colors.PRIMARY,
     borderRadius:30
@@ -210,7 +143,8 @@ Prix:{
     fontFamily:FontFamily
 },
 TextSouhaits:{
-    fontFamily:FontFamily
+    fontFamily:FontFamily,
+    marginLeft:1
 },
 ContainerButton2:{
     justifyContent:"center",
@@ -222,7 +156,7 @@ Button2:{
     flexDirection:"row",
     marginTop:15,
     backgroundColor:colors.PRIMARY,
-    height:50,
+    height:60,
     width:200,  
     borderRadius:30
 },
@@ -231,6 +165,12 @@ TextButton2:{
     fontFamily:FontFamily,
     fontSize:18,
     fontWeight:"bold"
+},
+containerItem:{
+    flexDirection:"row",
+    alignItems:"flex-start",
+    flex:1,
+    flexWrap:"wrap"
 }
 
 
