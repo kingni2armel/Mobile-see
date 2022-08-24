@@ -21,10 +21,12 @@ export default function LevelTreeScreen() {
 
   return (    
             <View style={styles.slide2}>
-            <Text style={styles.titleHeader}>Proposer un trajet </Text>
-            <Text style={styles.TrajetTitle}>Quel est le type de colis ?</Text>
-            <Text style={styles.TextDescription}>Sélectionnez les catégories d’articles que vous acceptez</Text>
-            <Text style={styles.levelStepTitele}>Step 3 of 6</Text>
+                <View>
+                    <Text style={styles.titleHeader}>Proposer un trajet </Text>
+                    <Text style={styles.TrajetTitle}>Quel est le type de colis ?</Text>
+                    <Text style={styles.TextDescription}>Sélectionnez les catégories d’articles que vous acceptez</Text>
+                    <Text style={styles.levelStepTitele}>Step 3 of 6</Text>
+                </View>
 
             <View style={styles.ContainerImage}>
                         <View style={styles.ContainerImageItem}>

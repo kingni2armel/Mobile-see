@@ -15,9 +15,9 @@ export default function LevelFourScreen() {
   return (    
             <View style={styles.slidecontainer}>
                 <View style={styles.slide2}>
-                <Text style={styles.titleHeader}>Proposer un trajet </Text>
-                <Text style={styles.TrajetTitle}>Documents</Text>
-                <Text style={styles.levelStepTitele}>Step 4 of 6</Text>
+                        <Text style={styles.titleHeader}>Proposer un trajet </Text>
+                        <Text style={styles.TrajetTitle}>Documents</Text>
+                        <Text style={styles.levelStepTitele}>Step 4 of 6</Text>
                 </View>
                 <View style={styles.parent}>
                     <View style={styles.parentItem}>

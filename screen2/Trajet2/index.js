@@ -18,9 +18,11 @@ export default function LevelTwoScreen() {
             <View style={styles.slide1}>
             
                 
-                        <Text style={styles.titleHeader}>Proposer un trajet </Text>
-                        <Text style={styles.TrajetTitle}>Type de service</Text>
-                        <Text style={styles.levelStepTitele}>Step 2 of 6</Text>
+                        <View>
+                            <Text style={styles.titleHeader}>Proposer un trajet </Text>
+                            <Text style={styles.TrajetTitle}>Type de service</Text>
+                            <Text style={styles.levelStepTitele}>Step 2 of 6</Text>
+                        </View>
                         <TouchableOpacity style={styles.Levelstep}></TouchableOpacity>
                         <View style={styles.containerTextInput}>
                             <View style={styles.Parent}>

@@ -49,10 +49,7 @@ export default function TrajetScreen() {
                   <ScrollView style={styles.TSS}>
                       <LevelFiveScreen/>
                   </ScrollView>
-               </View>
-
-
-                 
+               </View>             
           </Swiper>
     </View>
   );

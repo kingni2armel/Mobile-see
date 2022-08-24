@@ -14,9 +14,11 @@ export default function LeveloneScreen() {
               <View style={styles.slide1}>
                 
                     <ScrollView>
+                         <View>
                           <Text style={styles.titleHeader}>Proposer un trajet </Text>
-                          <Text style={styles.TrajetTitle}>Quel est le Trajet</Text>
-                          <Text style={styles.levelStepTitele}>Step 1 of 6</Text>
+                            <Text style={styles.TrajetTitle}>Quel est le Trajet</Text>
+                            <Text style={styles.levelStepTitele}>Step 1 of 6</Text>
+                         </View>
                           <TouchableOpacity style={styles.Levelstep}></TouchableOpacity>
                           <View style={styles.containerTextInput}>
                                 <View style={styles.Parent}>

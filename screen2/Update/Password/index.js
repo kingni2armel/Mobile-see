@@ -15,43 +15,35 @@ import {styles} from './style'
 export default function UpdatePasswordScreen() {Ionicons
   return (
          <View style={styles.ContainerParent}>
-               
-
                 <View style={styles.ContainerItem}>
                         <AntDesign
                                 name="lock"
                                 size={23}
                                 style={styles.Icon}
-
                         />
                         <TextInput
                             placeholder='Current Password'
                             style={styles.TextInput}
                             secureTextEntry={true}
-                        />
-                                      
+                        />                                      
                 </View>
                 <View style={styles.ContainerItem}>
                         <AntDesign
                                 name="lock"
                                 size={23}
                                 style={styles.Icon}
-
-
                         />
                         <TextInput
-                            placeholder='New Password'
-                            style={styles.TextInput}
-                            secureTextEntry={true}
-                        /> 
-                                      
+                                placeholder='New Password'
+                                style={styles.TextInput}
+                                secureTextEntry={true}
+                        />                                    
                 </View>
                 <View style={styles.ContainerItem}>
                         <AntDesign
                                 name="lock"
                                 size={23}
                                 style={styles.Icon}
-
                         />
                         <TextInput
                              placeholder='Confirm Password'
@@ -59,8 +51,7 @@ export default function UpdatePasswordScreen() {Ionicons
                              secureTextEntry={true}
                         />                
                 </View>
-               <ButtonUpdate/>
-               
+                <ButtonUpdate/>
         </View>
   );
 }
